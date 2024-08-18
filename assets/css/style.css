@@ -15,6 +15,7 @@
     --bg-player: #2A2141;
     --color-white: #E1E1E6;
     --color-track: #D9D9D9;
+    --color-hover: #0ff;
 }
 
 body {
@@ -62,18 +63,18 @@ body {
 /* Player 2 */
 #app #player-2 {
     grid-area: B;
-    padding:  3.2rem 2.2rem;
     width: fit-content;
 } 
 
 #app #player-2 .wrapper .info-wrapper {
     display: flex;
+    align-items: center;
     gap: 1rem;
 }
 
 #app #player-2 .wrapper img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     object-fit: cover;
 }
 
@@ -92,18 +93,18 @@ body {
 /* Player 3 */
 #app #player-3 {
     grid-area: C;
-    padding: 3.2rem 2.2rem;
     width: fit-content;
 } 
 
 #app #player-3 .wrapper .info-wrapper {
     display: flex;
+    align-items: center;
     gap: 1rem;
 }
 
 #app #player-3 .wrapper img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     object-fit: cover;
 }
 
@@ -125,12 +126,12 @@ body {
 /* Info */
 #app .player .info {
     color: var(--color-white);
-    display: grid;
     gap: .5rem;
 }
 
 #app .player h1 {
     font-size: 24px;
+    margin-bottom: .8rem;
 }
 
 #app .player p {
@@ -145,6 +146,19 @@ body {
     margin-top: 28px;
     color: var(--color-white);
     cursor: pointer;
+    transition: .5s;
+}
+
+#app .player .controls .prev, 
+#app .player .controls .play,
+#app .player .controls .next {
+    transition: .5s;
+}
+
+#app .player .controls .prev:hover, 
+#app .player .controls .play:hover,
+#app .player .controls .next:hover {
+    color: var(--color-hover);
 }
 
 /* Track */
@@ -191,8 +205,10 @@ body {
     
     #app {
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
+        max-width: 270px;
+        margin: auto;
+        height: auto;
+        padding-block: 60px;
     }
 }
