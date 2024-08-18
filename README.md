@@ -1,6 +1,7 @@
 <h1 align="center"> Play de Música </h1>
 
-![image](https://github.com/user-attachments/assets/61795003-4b89-4c72-b311-673ff9d5623e)
+![image](https://github.com/user-attachments/assets/39f4e17c-8d08-4dde-9ec4-70eaebb3a86f)
+
 
 
 <p align="center">
